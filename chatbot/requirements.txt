@@ -1,0 +1,6 @@
+flask
+flask_cors
+dotenv
+requests
+sentence-transformers
+torch

@@ -1,0 +1,161 @@
+{
+    "faqs": [
+      {
+        "question": "How do I upload an AI model?",
+        "answer": "To upload an AI model, you must log in and connect your MetaMask wallet. Then, upload a ZIP file containing a valid AI model file. The platform will verify the file extension before allowing the upload."
+      },
+      {
+        "question": "Do I need a MetaMask wallet to use the platform?",
+        "answer": "Yes, a MetaMask wallet is required to upload or purchase AI models. If you don’t have one, you’ll need to create it first."
+      },
+      {
+        "question": "What happens if I don’t have a wallet connected?",
+        "answer": "If no wallet is detected, the platform will prompt you to connect one. If you don’t have a wallet, you will need to create a MetaMask wallet before proceeding."
+      },
+      {
+        "question": "Where is my AI model stored after uploading?",
+        "answer": "Your AI model metadata is stored on the blockchain, while the model file itself is stored on IPFS due to its large size."
+      },
+      {
+        "question": "Can I change the price of my uploaded model?",
+        "answer": "Yes, you can edit the price of your uploaded model at any time from your profile page."
+      },
+      {
+        "question": "Can I change the price of a purchased model?",
+        "answer": "No, once a model is purchased, its price cannot be changed. However, you can re-upload the model and set a new price."
+      },
+      {
+        "question": "Can I buy models without logging in?",
+        "answer": "No, you must log in and connect your MetaMask wallet to purchase AI models."
+      },
+      {
+        "question": "How can I download a purchased model?",
+        "answer": "Once you have purchased a model, you can download it from your profile page."
+      },
+      {
+        "question": "What AI model categories are available?",
+        "answer": "You can upload models in categories like retail, agriculture, healthcare, business, and others."
+      },
+      {
+        "question": "What types of AI models can I upload?",
+        "answer": "You can upload supervised, unsupervised, and reinforcement learning models."
+      },
+      {
+        "question": "What happens if I upload an invalid AI model file?",
+        "answer": "The platform checks the uploaded ZIP file for valid AI model extensions. If the file is invalid, the upload will be rejected."
+      },
+      {
+        "question": "How do I contact the admin?",
+        "answer": "You can send a message to the admin using the contact form available on the platform."
+      },
+      {
+        "question": "Can I filter models while browsing?",
+        "answer": "Yes, you can use filters on the profile page to search for specific AI models."
+      },
+      {
+        "question": "Can I edit my account details?",
+        "answer": "Yes, you can edit your name and password from your profile settings."
+      },
+      {
+        "question": "Does every transaction require gas fees?",
+        "answer": "Yes, since the platform is blockchain-based, every upload and purchase requires a gas fee."
+      },
+      {
+        "question": "Can I see models without logging in?",
+        "answer": "Yes, you can browse the marketplace without logging in, but you cannot purchase models."
+      },
+      {
+        "question": "What happens if my MetaMask wallet is not connected?",
+        "answer": "The platform will prompt you to connect your MetaMask wallet before proceeding with any transaction."
+      },
+      {
+        "question": "Where can I see all my uploaded and purchased models?",
+        "answer": "All your uploaded and purchased models are displayed in your profile page."
+      },
+      {
+        "question": "Is there a fee for uploading a model?",
+        "answer": "Yes, since the platform is blockchain-based, a gas fee is required for uploading models."
+      },
+      {
+        "question": "Can I delete my uploaded AI model?",
+        "answer": "No, since the data is stored on the blockchain, it cannot be deleted. However, you can update the price or re-upload a modified version."
+      },
+      {
+        "question": "What file formats are allowed for AI models?",
+        "answer": "Your AI model should be in a valid format like .h5, .pt, .pkl, or .onnx inside a ZIP file."
+      },
+      {
+        "question": "How long does it take for my model to be available after uploading?",
+        "answer": "Once uploaded, your model is immediately available for listing after verification."
+      },
+      {
+        "question": "Can I list my AI model for free?",
+        "answer": "No, every upload requires a gas fee, but you can set your model price to zero if you want to offer it for free."
+      },
+      {
+        "question": "What happens if my transaction fails?",
+        "answer": "If your transaction fails, ensure you have enough gas fees in your wallet and try again."
+      },
+      {
+        "question": "Can I upload multiple models at once?",
+        "answer": "Currently, you can only upload one model at a time."
+      },
+      {
+        "question": "How do I check my wallet balance before making a purchase?",
+        "answer": "You can check your balance directly in your MetaMask wallet before proceeding with a purchase."
+      },
+      {
+        "question": "What if I lose access to my MetaMask wallet?",
+        "answer": "If you lose access to your MetaMask wallet, you need to recover it using your seed phrase. The platform does not store or manage wallets."
+      },
+      {
+        "question": "How do I ensure my AI model is properly packaged for upload?",
+        "answer": "Ensure your AI model file is in a valid format (.h5, .pt, .pkl, .onnx) and is zipped before uploading."
+      },
+      {
+        "question": "Can I sell pre-trained AI models?",
+        "answer": "Yes, you can sell both pre-trained and custom AI models as long as they meet the platform's guidelines."
+      },
+      {
+        "question": "Do I need coding skills to use the platform?",
+        "answer": "No, you don’t need coding skills to browse and purchase models, but uploading AI models requires understanding of AI model formats."
+      },
+      {
+        "question": "Can I resell a purchased model?",
+        "answer": "Yes, after purchasing a model, you can re-upload it with a new price and sell it again."
+      },
+      {
+        "question": "How do I know if a model is suitable for my needs?",
+        "answer": "Each model listing includes a description and category. You can also contact the seller for more details."
+      },
+      {
+        "question": "Can I refund a model after purchasing?",
+        "answer": "No, all purchases are final and cannot be refunded."
+      },
+      {
+        "question": "How do I know if a model is genuine?",
+        "answer": "The platform verifies model file extensions but does not guarantee performance. Review seller reputation and model details before purchasing."
+      },
+      {
+        "question": "What security measures does the platform use?",
+        "answer": "The platform uses blockchain for secure transactions and IPFS for decentralized storage. MetaMask ensures secure wallet transactions."
+      },
+      {
+        "question": "Is there a transaction history available?",
+        "answer": "Yes, your profile page shows all your uploaded and purchased models along with transaction history."
+      },
+      {
+        "question": "Can I share my uploaded model with others?",
+        "answer": "Yes, you can share your model listing with others, but they need to purchase it if it’s a paid model."
+      },
+      {
+        "question": "What happens if IPFS goes down?",
+        "answer": "IPFS is a decentralized storage network, so files remain available as long as they are pinned or accessed regularly."
+      },
+      {
+        "question": "Can I list models under multiple categories?",
+        "answer": "No, each model can only be listed under one category at a time."
+      }
+    ]
+  }
+  

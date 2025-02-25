@@ -1,0 +1,13 @@
+# Ignore environment variables file
+.env
+
+# Ignore log files
+*.log
+
+# Ignore build directories (if applicable)
+dist/
+build/
+
+# Ignore dependency lock files (optional)
+package-lock.json
+yarn.lock
