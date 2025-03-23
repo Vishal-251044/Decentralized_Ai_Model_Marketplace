@@ -1,0 +1,221 @@
+#market-page {
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.market-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.market-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  text-align: center;
+  color: #f7f700;
+}
+
+.market-content {
+  display: flex;
+  gap: 20px;
+}
+
+.filter-box {
+  width: 250px;
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  padding-bottom: 40px;
+  border: 2px solid rgb(122, 122, 122);
+}
+
+.filter-box h3 {
+  background-color: #1e1e1e;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #00fefe;
+  text-align: center;
+}
+
+.filter-box label {
+  background-color: #1e1e1e;
+  display: block;
+  font-size: 1rem;
+  color: #464646;
+  margin-top: 10px;
+}
+
+.filter-box select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  background-color: #333;
+  color: #ffffff;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+.model-grid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.model-card {
+  background-color: #252525;
+  border: 1px solid #01faf2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.model-details {
+  flex: 1;
+  padding: 10px;
+  background-color: #252525;
+}
+
+.model-name {
+  font-size: 1.5rem;
+  color: #01ffff;
+  margin-bottom: 5px;
+  background-color: #252525;
+  text-align: center;
+}
+
+.model-info {
+  font-size: 1rem;
+  color: #b0b0b0;
+  margin: 5px 0;
+  text-transform: capitalize;
+  background-color: #252525;
+  text-align: center;
+}
+
+.model-price {
+  font-size: 1.2rem;
+  color: #ff9800;
+  font-weight: bold;
+  background-color: #252525;
+  text-align: center;
+}
+
+.buy-button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #ff9800;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buy-button:hover {
+  background-color: #ffb74d;
+}
+
+.model-description-box {
+  flex: 1;
+  background-color: #252525;
+  padding: 10px;
+  text-align: left;
+}
+
+.model-description {
+  font-size: 1rem;
+  background-color: #252525;
+  color: #c0c0c0;
+  margin-bottom: 10px;
+}
+
+.model-info-head {
+  background-color: #252525;
+}
+
+.no-models-message {
+  background-color: #252525;
+  padding: 10px;
+  border-radius: 20px;
+  color: #576867;
+  margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .market-content {
+    flex-direction: column;
+  }
+
+  .model-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .model-description-box {
+    text-align: center;
+  }
+
+  .buy-button {
+    width: 100%;
+  }
+
+  .no-models-message {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-box {
+    width: 90%; 
+    margin: 0 auto 20px auto; 
+    position: relative; 
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 50px;
+  }
+
+  .filter-box h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .filter-box label {
+    display: block;
+    font-size: 1rem;
+    margin: 10px 0 5px 0;
+    text-align: left;
+  }
+
+  .filter-box select {
+    width: 100%; 
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+    border-radius: 5px;
+  }
+}

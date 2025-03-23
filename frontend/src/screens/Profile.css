@@ -1,0 +1,504 @@
+.profile-page {
+  padding: 20px;
+  color: white;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  background-color: #f7b924;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  font-weight: bolder;
+}
+
+.profile-info {
+  flex-grow: 1;
+  color: aqua;
+}
+
+.profile-info p {
+  margin: 5px 0;
+}
+
+.not-connected {
+  color: red;
+}
+
+.edit-icon {
+  cursor: pointer;
+  font-size: 25px;
+  color: #00fff2;
+  transition: color 0.3s ease;
+}
+
+.edit-icon:hover {
+  color: #fce302;
+}
+
+.edit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: rgb(52, 52, 52);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(3, 62, 54, 0.965);
+}
+
+.modal-content h2 {
+  background: rgb(52, 52, 52);
+  text-align: center;
+  color: rgb(0, 255, 204);
+  margin: 0 0 10px 0;
+}
+
+.input-field {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: black;
+}
+
+.modal-buttons {
+  display: flex;
+  background-color: rgb(52, 52, 52);
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.primary-button,
+.secondary-button {
+  flex: 1;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.primary-button {
+  background-color: #00efd8;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.secondary-button {
+  background-color: #f2fe01;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.upload-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #00f7ff;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh; 
+  overflow-y: auto;
+  box-shadow: 0px 4px 10px rgba(0, 242, 254, 0.8);
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #1e1e1e; 
+  border-radius: 5px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #008787; 
+  border-radius: 5px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #666; 
+}
+
+.modal-content {
+  scrollbar-width: thin;
+  scrollbar-color: #444 #1e1e1e;
+}
+
+.upload-button {
+  display: block;
+  margin: 20px auto; 
+  text-align: center;
+  background-color: #00f7ff;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 10px;
+  width: 40%;
+  border: none;
+  cursor: pointer;
+}
+
+.upload-modal h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #00f2ff;
+  background-color: #000000;
+}
+
+.input-field,
+.input-field1 {
+  width: calc(100% - 20px); 
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #00f7ff;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.input-field {
+  width: 100%;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #000000;
+}
+
+.primary-button,
+.secondary-button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.primary-button {
+  background-color: #03fae1;
+  color: rgb(0, 0, 0);
+}
+
+.secondary-button {
+  background-color: #fffb00;
+  color: rgb(0, 0, 0);
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .profile-info {
+    width: 90%;
+  }
+
+  .profile-info p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  .edit-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .upload-modal .modal-content {
+    width: 90%;
+    margin: 10px;
+  }
+}
+
+.connect-wallet-button {
+  background-color: #fcfc00;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.connect-wallet-button:hover {
+  background-color: #bdba00;
+}
+
+.connect-wallet-button:active {
+  transform: scale(0.95);
+}
+
+.connect-wallet-button:disabled {
+  background-color: #efcbcb;
+  cursor: not-allowed;
+}
+
+.disconnect-wallet-button {
+  background-color: #ff4d4d;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.disconnect-wallet-button:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+}
+
+.user-models-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.user-model-card {
+  width: 100%;
+  max-width: 800px;
+  background: #000000;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 250, 250, 0.8);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-models-heading {
+  color: #04fffb;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.user-model-name {
+  color: #ffcc00;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user-model-category,
+.user-model-price,
+.user-model-sale-status {
+  color: #ddd;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.user-model-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.user-model-link:hover {
+  color: #00bfff;
+}
+
+.user-model-edit-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.user-model-price-input {
+  background: #333;
+  border: 1px solid #555;
+  color: #fff;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.user-model-update-btn,
+.user-model-cancel-btn,
+.user-model-edit-btn {
+  background: #01fcfc;
+  color: #000;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.user-model-edit-btn {
+  background: #01edfa;
+  color: #000000;
+}
+
+.user-model-update-btn:hover {
+  background: #00a49c;
+}
+
+.user-model-edit-btn:hover {
+  background: #00bfff;
+}
+
+.user-model-cancel-btn {
+  background: #fffb01;
+  color: rgb(0, 0, 0);
+}
+
+.user-model-cancel-btn:hover {
+  background: #c5ae00;
+}
+
+.user-no-models-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #000000;
+  color: #ffff00;
+  padding: 10px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+
+  .user-models-box {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .user-models-heading {
+    font-size: 20px;
+  }
+
+  .user-model-name {
+    font-size: 18px;
+  }
+
+  .user-model-price,
+  .user-model-category,
+  .user-model-sale-status {
+    font-size: 14px;
+  }
+
+  .user-model-price-input,
+  .user-model-update-btn,
+  .user-model-cancel-btn {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .user-model-card {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .user-model-card {
+    max-width: 95%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-model-card {
+    max-width: 100%;
+    padding: 10px;
+  }
+}

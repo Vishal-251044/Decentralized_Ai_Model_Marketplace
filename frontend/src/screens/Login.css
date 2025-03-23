@@ -1,0 +1,205 @@
+.authentication-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  padding: 20px;
+}
+
+.authentication-box {
+  display: flex;
+  background: #000000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgb(2, 248, 248, 0.5);
+  max-width: 850px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.authentication-image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
+  padding: 15px;
+}
+
+.authentication-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 255, 221);
+}
+
+.authentication-form-container {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #000000;
+  border-radius: 30px;
+  margin: 15px;
+
+}
+
+.login-form-section {
+  color: white;
+  border-radius: 10px;
+}
+
+.signup-form-section {
+  color: white;
+  border-radius: 10px;
+}
+
+.form-heading {
+  color: skyblue;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.input-field {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 5px 10px 7px;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 13px;
+  border: 1px solid rgb(0, 255, 221);
+}
+
+.input-field1 {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 5px 10px 7px;
+  border: none;
+  color: white;
+  border: 1px solid rgb(0, 255, 221);
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 7px;
+}
+
+.password-container .input-field {
+  flex: 1;
+}
+
+.show-hide-password-btn {
+  position: absolute;
+  right: 10px;
+  background: #000000;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: gray;
+}
+
+.primary-button-login {
+  width: 95%;
+  background: rgb(3, 242, 234);
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+  margin: auto;
+  margin-top: 10px;
+  padding: 7px 12px;
+  display: block;
+  text-align: center;
+}
+
+.primary-button-login:hover {
+  background: rgb(3, 134, 121);
+}
+
+.google-authentication {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: rgb(0, 0, 0);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.google-authentication button {
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-toggle-text {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.toggle-link {
+  color: rgb(233, 245, 7);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .authentication-box {
+    flex-direction: column;
+    margin-right: 22px;
+  }
+
+  .input-field1 {
+    width: 82%;
+  }
+
+  .google-authentication {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 10px auto 10px;
+  }
+
+  .google-authentication button {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .authentication-image-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) and (min-width: 500px) {
+  .input-field1 {
+    width: 90%;
+  }
+}
